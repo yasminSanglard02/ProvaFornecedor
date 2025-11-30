@@ -1,5 +1,5 @@
 import express from 'express';
-import fornecedorRouters from "./scr/routes/fornecedor.routes.js";
+import fornecedorRouters from "./src/routes/fornecedor.routes.js";
 
 const app = express ();
 

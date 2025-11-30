@@ -1,7 +1,7 @@
-import fornecedorService from '../services/cliente.service.js';
+import fornecedorService from '../services/fornecedor.service.js';
 
 async function createFornecedorController(request, response) {
-    const novoFornedor = request.body;
+    const novoFornecedor = request.body;
 
     try {
         const fornecedor = await fornecedorService.createFornecedorService(novoFornecedor);
@@ -33,7 +33,7 @@ async function findFornecedorByIdController(request, response) {
 
 async function updateFornecedorController(request, response) {
     const {id}          = request.params;
-    const novoFornedor  = request.body;
+    const novoFornecedor  = request.body;
 
     try {
         const fornecedor = await fornecedorService.updateFornecedorService(novoFornecedor, id);
