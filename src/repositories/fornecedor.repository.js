@@ -21,7 +21,7 @@ function createFornecedorRepository(novoFornecedor) {
 
         db.run(
             `INSERT INTO fornecedor (nome, cnpj, email)
-           CSSFontFeatureValuesRule(?,?,?)`,
+            VALUES(?,?,?)`,
            [nome, cnpj, email],
            (error) => {
                 if(error) {
